@@ -13,16 +13,16 @@ namespace FaveTunes.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult About() 
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "What is FaveTunes?";
 
-            return View();
+            return View(); // return to About.cshtml (Home\View\About) 
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "TouchPoint International Sdn Bhd";
 
             return View();
         }

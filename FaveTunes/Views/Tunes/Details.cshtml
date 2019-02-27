@@ -1,0 +1,55 @@
+﻿@model FaveTunes.Models.Tunes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tunes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Artist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Artist)
+        </dd>
+        <dd>
+            @Html.DisplayNameFor(model => model.Album)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Album)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
